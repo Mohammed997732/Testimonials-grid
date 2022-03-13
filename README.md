@@ -23,7 +23,7 @@ The challenge was to build a simple Grid Testimonial section using Frontend tech
 
 ### links
 
-Solution URL: [Click Here]()
+Solution URL: [Click Here](https://www.frontendmentor.io/solutions/testimonials-grid-section-using-css-grid-wYsICqVtT)
 
 Live Preview: [Click Here](https://mohammed997732.github.io/Testimonials-grid/)
 
