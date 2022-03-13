@@ -25,7 +25,7 @@ The challenge was to build a simple Grid Testimonial section using Frontend tech
 
 Solution URL: [Click Here]()
 
-Live Preview: [Click Here]()
+Live Preview: [Click Here](https://mohammed997732.github.io/Testimonials-grid/)
 
 ## My process
 
