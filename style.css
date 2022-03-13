@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #edf2f8;
+  line-height: 1.4;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.testimonials {
+  max-width: 144rem;
+  margin: 10rem auto;
+  /* padding: 2rem; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+  padding: 0 10rem;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 3.2rem;
+  box-shadow: 0px 5rem 10rem 0 rgba(17, 12, 46, 0.15);
+}
+.card__header {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+.card__img {
+  border-radius: 50%;
+  width: 4rem;
+}
+.card__name {
+  font-size: 1.6rem;
+}
+.card__title {
+  font-size: 1.6rem;
+}
+.card__title {
+  opacity: 50%;
+}
+.card__lead {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 1.6rem;
+}
+.card__quote {
+  font-size: 1.6rem;
+  opacity: 70%;
+  line-height: 1.3;
+}
+/* Different colors for each card */
+.card--violet {
+  background-color: #7541c8;
+  color: #fff;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position: 90% 0%;
+}
+.card--violet .card__img {
+  border: 3px solid #9465e0;
+}
+.card--gray-blue {
+  background-color: #48556a;
+  color: #fff;
+}
+.card--black-blue {
+  background-color: #19212e;
+  color: #fff;
+}
+.card--black-blue .card__img {
+  border: 3px solid #7541c8;
+}
+
+/* Different grid */
+.card:nth-child(1) {
+  grid-column: 1 / 3;
+}
+.card:nth-child(4) {
+  grid-column: 2 / 4;
+}
+.card:nth-child(5) {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+}
+.card:nth-child(5) .card__quote {
+  line-height: 1.5;
+  margin-top: 2.5rem;
+}
+@media (max-width: 800px) {
+  .testimonials {
+    padding: 0 1.5rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .card:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+  .card:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+  .card:nth-child(3) {
+    grid-row: 3/4;
+  }
+  .card:nth-child(4) {
+    grid-column: 1;
+    grid-row: 4/5;
+  }
+  .card:nth-child(5) {
+    grid-row: 5/6;
+    grid-column: 1;
+  }
+  .card:nth-child(5) .card__quote {
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+}
